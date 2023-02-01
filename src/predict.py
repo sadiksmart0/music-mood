@@ -61,7 +61,7 @@ def top_ten():
     return tracklist
 
 #============================ VECTORIZE SEARCH PARAMETERS =======================#
-nlp = spacy.load("https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.4.1/en_core_web_sm-3.4.1-py3-none-any.whl")
+nlp = spacy.load("en_core_web_sm")
 sims = []
 doc_id = []
 
