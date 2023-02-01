@@ -4,7 +4,7 @@ import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 import neattext as nt
 import pandas as pd
-import gensim
+#import gensim
 import en_core_web_md
 from database import get_from_all_songs, get_from_recommendations,write_to_recommendations
 import spacy
