@@ -5,7 +5,7 @@ warnings.simplefilter(action='ignore', category=FutureWarning)
 import neattext as nt
 import pandas as pd
 #import gensim
-import en_core_web_md
+#import en_core_web_md
 from database import get_from_all_songs, get_from_recommendations,write_to_recommendations
 import spacy
 import random
@@ -61,7 +61,7 @@ def top_ten():
     return tracklist
 
 #============================ VECTORIZE SEARCH PARAMETERS =======================#
-nlp = en_core_web_md.load()
+nlp = spacy.load("en_core_web_md")
 sims = []
 doc_id = []
 
